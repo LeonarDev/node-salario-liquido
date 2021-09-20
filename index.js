@@ -43,7 +43,7 @@ const calculaSalario = (salarioBruto) => {
   console.log(`Salário líquido: ${salarioLiquido.toFixed(2)}`);
 };
 
-const inputSalarioBruto = rl.questionFloat('Digite o salário bruto: ');
+const inputSalarioBruto = rl.questionFloat('Digite o salario bruto: ');
 const outputSalarioLiquido = calculaSalario(inputSalarioBruto);
 
 console.log(outputSalarioLiquido);
