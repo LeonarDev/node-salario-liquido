@@ -33,17 +33,18 @@ const calculaSalario = (salarioBruto) => {
   const descontoIRPFComDeducao = descontoIRPF - deducao;
   const salarioLiquido = baseCalculo - descontoIRPFComDeducao;
   const totalDescontado = descontoINSS + descontoIRPFComDeducao;
-  console.log(`Desconto INSS: ${descontoINSS}`);
-  console.log(`Base de cálculo: ${baseCalculo}`);
-  console.log(`Desconto IRPF: ${descontoIRPF.toFixed(2)}`);
-  console.log(`Desconto IRPF com dedução: ${descontoIRPFComDeducao.toFixed(2)}`);
-  console.log(`==================================`);
-  console.log(`Salário bruto: ${salarioBruto}`);
-  console.log(`Total desconto: ${totalDescontado.toFixed(2)}`);
-  console.log(`Salário líquido: ${salarioLiquido.toFixed(2)}`);
+  console.log(`Desconto INSS: R$ ${descontoINSS}`);
+  console.log(`Base de cálculo: R$ ${baseCalculo}`);
+  console.log(`Desconto IRPF: R$ ${descontoIRPF.toFixed(2)}`);
+  console.log(`Desconto IRPF com dedução: R$ ${descontoIRPFComDeducao.toFixed(2)}`);
+  console.log(`=====================================`);
+  console.log(`Salário bruto: R$ ${salarioBruto}`);
+  console.log(`Total desconto: R$ ${totalDescontado.toFixed(2)}`);
+  console.log(`Salário líquido: R$ ${salarioLiquido.toFixed(2)}`);
 };
 
-const inputSalarioBruto = rl.questionFloat('Digite o salario bruto: ');
+const inputSalarioBruto = rl.questionFloat('Digite o salario bruto: R$ ');
+console.log();
 const outputSalarioLiquido = calculaSalario(inputSalarioBruto);
 
 console.log(outputSalarioLiquido);
